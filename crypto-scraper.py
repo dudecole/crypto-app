@@ -23,16 +23,13 @@ json_dict = json.loads(json_tag)
 
 print(json.dumps(json_dict["initialData"]["data"]["asset"], sort_keys=True, indent=4))
 # json_dict = json.loads(json_tag)
-json_string = json.dumps(json_dict["initialData"]["data"]["asset"]["latest"])
 
+# latest price - as a json string
+print(json.dumps(json_dict["initialData"]["data"]["asset"]["latest"]))
 
-# p.pprint(json.dumps(json_string, sort_keys=True, indent=4))
-# json_string = json.dumps(json_dict)
+# acronym of the asset - as a json string
+print(json.dumps(json_dict["initialData"]["data"]["asset"]["symbol"]))
 
-# here is the current price.
-print(json_string)
-# p.pprint(json_dumps["initialData"])
-# p.pprint(json_tag["initialData"])#.data.articles[0])
 
 file = open("ugly-soup.html", "w")
 file.write(str(ugly_soup.prettify()))
