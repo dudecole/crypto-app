@@ -1,3 +1,7 @@
 flask
-redis
+#redis
 requests
+rq
+lxml
+html5lib
+beautifulsoup4
