@@ -1,2 +1,2 @@
-# python-k3s
-python app running on k3s
+# python web scraper
+python app using beautiful soup to scrape a webpage
